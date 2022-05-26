@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Temperature Monitoring{% endblock %}
+{% block heading %}Temperature{% endblock %}
+{% block content %}
+<!--
+    {% for x in range(100) %}
+        <p>Temperature: {{temp[x]}} DateTime: {{dt[x]}}</p>
+    {% endfor %}
+    --->
+    <h2>Temperature in 24th May</h2>
+    <center><iframe width="1000" height="550" frameborder="0" seamless="seamless" scrolling="no" src="{{temp_url}}"></iframe></center>
+{% endblock %}
