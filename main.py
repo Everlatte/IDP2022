@@ -37,7 +37,7 @@ def plot():
     fig.savefig(data_plot_url)
     return data_plot_url
 
-@app.route("/home")
+@app.route("/")
 def home():
     return render_template("index.html", username="Everlatte", email="everlatte@1utar.my")
 
